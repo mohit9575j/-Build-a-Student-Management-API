@@ -1,3 +1,4 @@
+ 
 import express from 'express';
 import {
   addStudent,
@@ -9,10 +10,10 @@ import {
 
 const router = express.Router();
 
-router.post('/', addStudent);
-router.get('/', getAllStudents);
-router.get('/:id', getStudentById);
-router.put('/:id', updateStudent);
-router.delete('/:id', deleteStudent);
+router.post('/', addStudent); // Add a new student
+router.get('/', getAllStudents); // Get all students      
+router.get('/:id', getStudentById); // Get a student by ID
+router.put('/:id', updateStudent); // Update a student by ID
+router.delete('/:id', deleteStudent); // Delete a student by ID
 
 export default router;

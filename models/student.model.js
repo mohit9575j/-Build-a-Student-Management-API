@@ -1,29 +1,32 @@
-import { DataTypes } from 'sequelize';
+
+import {DataTypes} from 'sequelize';
 import sequelize from '../config/db.js';
 
-const Student = sequelize.define('Student', {
-  name: {
+const student = sequelize.define('student' , {
+  name:{
     type: DataTypes.STRING,
     allowNull: false,
     validate: {
-      notEmpty: true,
-    },
+      notEMpty: true,
+    }
   },
-  email: {
+  email:{ 
     type: DataTypes.STRING,
     allowNull: false,
     unique: true,
-    validate: {
+    validate:{
       isEmail: true,
-    },
+    }
   },
-  age: {
+  age:{
     type: DataTypes.INTEGER,
     allowNull: false,
   }
-}, {
-  timestamps: false,
-  tableName: 'students'
-});
+},
+  {
+    timestamps: false,
+    tableName: 'students'
+  }
+);
 
-export default Student;
+export default student;
