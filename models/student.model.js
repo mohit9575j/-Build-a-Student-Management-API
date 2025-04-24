@@ -1,24 +1,29 @@
 import { DataTypes } from 'sequelize';
 import sequelize from '../config/db.js';
 
-
-export const User = sequelize.define('User', {
+const Student = sequelize.define('Student', {
   name: {
     type: DataTypes.STRING,
     allowNull: false,
     validate: {
-      notEmpty: true // This ensures the name isn't an empty string
-    }
+      notEmpty: true,
+    },
   },
   email: {
     type: DataTypes.STRING,
     allowNull: false,
     unique: true,
     validate: {
-      isEmail: true // This validates that the email is in correct format
-    }
+      isEmail: true,
+    },
+  },
+  age: {
+    type: DataTypes.INTEGER,
+    allowNull: false,
   }
 }, {
   timestamps: false,
-  tableName: 'users'
+  tableName: 'students'
 });
+
+export default Student;

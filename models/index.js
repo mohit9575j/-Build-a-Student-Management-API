@@ -1,17 +1,8 @@
-import { Sequelize } from 'sequelize';
 import sequelize from '../config/db.js';
-import { Bus } from './bus.model.js';
-import { User } from './user.model.js';
+import Student from './student.model.js';
 
-const db = {
-  sequelize,
-  Sequelize,
-  Bus,
-  User
-};
-
-// For Sequelize operators like Op.gt
+const db = {};
 db.sequelize = sequelize;
-db.Sequelize = Sequelize;
+db.Student = Student;
 
 export default db;

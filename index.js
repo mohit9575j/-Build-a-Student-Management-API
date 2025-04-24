@@ -1,24 +1,27 @@
 import express from 'express';
-import bodyParser from 'body-parser';
 import db from './models/index.js';
-import busRoutes from './routes/bus.routes.js';
-import userRoutes from './routes/user.routes.js';
+import setupRoutes from './routes/index.js';
+import dotenv from 'dotenv';
+
+dotenv.config();
+const PORT = process.env.PORT || 5000;
 
 const app = express();
-const PORT = 5000;
+app.use(express.json());
 
-app.use(bodyParser.json());
+setupRoutes(app);
 
-// Bus routes use karo
-app.use('/buses', busRoutes);
-app.use('/users', userRoutes);
+const startServer = async () => {
+  try {
+    await db.sequelize.sync({ alter: true });
+    console.log('Database synced successfully ✅');
+    app.listen(PORT, () => {
+      console.log(`Server running on http://localhost:${PORT}`);
+    });
+  } catch (error) {
+    console.error('Error starting server:', error);
+    process.exit(1);
+  }
+};
 
-// Sync DB
-db.sequelize.sync({ alter: true }).then(() => {
-  console.log("Database synced successfully ✅");
-  app.listen(PORT, () => {
-    console.log(`Server running at http://localhost:${PORT}`);
-  });
-}).catch(err => {
-  console.error("Error syncing database:", err);
-});
+startServer();
