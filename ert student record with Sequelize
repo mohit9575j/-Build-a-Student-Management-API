@@ -1,0 +1,66 @@
+[33mcommit a5c9a899a4b8116498fc88a6128c03dc8e6711a9[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Merge: df32b54 88e627d
+Author: mohit <joshimohit8120@gmail.com>
+Date:   Thu Apr 24 20:02:40 2025 +0530
+
+    Insert student record with Sequelize
+
+[33mcommit df32b548c0c0efb1b061f0f6fd1c0648ef85f85b[m
+Author: mohit <joshimohit8120@gmail.com>
+Date:   Thu Apr 24 20:00:02 2025 +0530
+
+    Insert student record with Sequelize
+
+[33mcommit 88e627d4b39e455dee23f9b62327e08325f185aa[m
+Author: Mohit <joshimohit8130@gmail.com>
+Date:   Thu Apr 24 12:09:42 2025 +0530
+
+    Update README.md
+    
+    organized in a proper way readMe file
+
+[33mcommit 7cf5e46df1367a943a86ae1539b39969ec090e0f[m
+Merge: 935e77f f4761fb
+Author: mohit <joshimohit8120@gmail.com>
+Date:   Thu Apr 24 11:53:36 2025 +0530
+
+     completed tested and working crud api for student management system
+
+[33mcommit 935e77fbbc4fca3918eb0366fec862c3807818ee[m
+Author: mohit <joshimohit8120@gmail.com>
+Date:   Thu Apr 24 11:48:15 2025 +0530
+
+    This is the CRUD operations of the Student Management API, where the user can update, delete, get, and read their database values.
+
+[33mcommit f4761fb3a6d939c3c849d5db592aa50b31433783[m
+Author: Mohit <joshimohit8130@gmail.com>
+Date:   Thu Apr 24 11:44:25 2025 +0530
+
+    Update README.md
+    
+    managed and organized readme file
+
+[33mcommit 9a9528340472a2cd80deab6405a03447782b4e86[m
+Author: Mohit <joshimohit8130@gmail.com>
+Date:   Thu Apr 24 11:42:37 2025 +0530
+
+    Initial commit
+
+[33mcommit 185cb587cd8aab89908f997b7fc0ea41eeb406c4[m
+Merge: 050802e f912456
+Author: mohit <joshimohit8120@gmail.com>
+Date:   Wed Apr 23 20:28:41 2025 +0530
+
+    Resolved merge conflicts
+
+[33mcommit 050802edcf7c4ea6acf301cd4ec62cad07cac7bc[m
+Author: mohit <joshimohit8120@gmail.com>
+Date:   Wed Apr 23 20:23:46 2025 +0530
+
+    this is the complete project of mini bus bookin rest api which is working fine i have tested this in postman also
+
+[33mcommit f912456f14ebb25160a3da76079298e2d922d873[m
+Author: Mohit <joshimohit8130@gmail.com>
+Date:   Mon Apr 21 20:10:08 2025 +0530
+
+    Initial commit
